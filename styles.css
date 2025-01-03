@@ -1,0 +1,84 @@
+:root {
+    --bg-gradient-color1: hsl(231, 100%, 79%);
+    --bg-gradient-color2: hsl(231, 76%, 97%);
+    --text-primary-color:  hsl(231, 91%, 45%);
+    --font-header: Acorn;
+    --textsize-header: 5.5rem;
+    --font-body: 'Space Grotesk', sans-serif;
+    --textsize-body: 1.5rem;
+    --gradient: 
+        linear-gradient(
+            to bottom right,
+            var(--bg-gradient-color2), 
+            var(--bg-gradient-color1)
+        );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: hsl(240, 68%, 93%);
+} */
+
+@keyframes gradient {
+    0% {background-position: 30% 70%;}
+    100% {background-position: 70% 70%;}
+}
+
+.gradient-wrapper {
+    background: var(--gradient);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite alternate;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+h1 {
+    font-family: var(--font-header);
+    color: var(--text-primary-color);
+    font-size: var(--textsize-header);
+    z-index: 10;
+}
+
+p, li{
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--text-primary-color);
+    font-size: var(--textsize-body);
+    z-index: 10;
+}
+
+li{
+    font-size: 1.1rem;
+}
+
+section, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4rem;
+    max-width: 900px;
+    height: auto;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p {
+    margin: rem 0;
+}
