@@ -1,17 +1,16 @@
 :root {
-    --bg-gradient-color1: hsl(231, 100%, 79%);
-    --bg-gradient-color2: hsl(231, 76%, 97%);
-    --text-primary-color:  hsl(231, 91%, 45%);
-    --font-header: Acorn;
-    --textsize-header: 5.5rem;
-    --font-body: 'Space Grotesk', sans-serif;
+    --bg-header2: rgb(235, 17, 17);
+    --bg-header: rgb(20, 20, 73);
+    --font-header: Acorn, Roboto, sans-serif;
+    --textsize-heading-lg: 3rem;
+    --textsize-heading: 2rem;
+    --textsize-subheading: 1.75rem;
     --textsize-body: 1.5rem;
-    --gradient: 
-        linear-gradient(
-            to bottom right,
-            var(--bg-gradient-color2), 
-            var(--bg-gradient-color1)
-        );
+    --textcolor-heading: white;
+    --textcolor-body: rgb(20, 20, 73);
+    --textcolor-accent: rgb(235, 17, 17);
+    --bg-body: rgb(130, 179, 253);
+    --font-body: Roboto, sans-serif;
 }
 
 * {
@@ -20,44 +19,61 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: hsl(240, 68%, 93%);
-} */
-
-@keyframes gradient {
-    0% {background-position: 30% 70%;}
-    100% {background-position: 70% 70%;}
+body{
+    background: var(--bg-body);
 }
 
-.gradient-wrapper {
-    background: var(--gradient);
-    background-size: 400% 400%;
-    animation: gradient 20s ease infinite alternate;
-    height: 100%;
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-} 
-
-h1 {
+    width: 100%;
+    color: var(--textcolor-heading);
+    background-color: var(--bg-header);
     font-family: var(--font-header);
-    color: var(--text-primary-color);
-    font-size: var(--textsize-header);
-    z-index: 10;
+    padding: 1rem;
+}
+
+.title-container {
+    background-color: var(--bg-header2);
+    width: 100%;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+/* #subheader {    
+    border-bottom: 3px solid white;
+} */
+
+h1{
+    font-size: var(--textsize-heading-lg);
+    padding: 2rem;
+    color: var(--textcolor-heading);
+}
+
+header h1 {
+    font-size: var(--textsize-heading);
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    padding: 2rem;
+    font-size: var(--textsize-subheading);
+}
+
+header h2 {
+    padding: 1rem .5rem 0 .5rem;
+    font-size: var(--textsize-subheading);
 }
 
 p, li{
     font-family: var(--font-body);
     font-weight: 400;
-    color: var(--text-primary-color);
+    color: var(--textcolor-body);
     font-size: var(--textsize-body);
-    z-index: 10;
-}
-
-li{
-    font-size: 1.1rem;
+    padding: .5rem;
 }
 
 section, footer {
@@ -71,14 +87,69 @@ section, footer {
     height: auto;
 }
 
-.hero {
-    height: 100vh;
+#expert {
+    height: 80vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
+    margin: auto;
+    padding: 1rem;
+    max-width: none;
 }
 
-.hero p {
-    margin: rem 0;
+#cta {
+    height: 15vh;
+}
+
+.expert-details, .expert-photo {
+    padding: 1rem;
+    margin: 1rem;
+    width: 50%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.testimonials {
+    padding: 2rem;
+    font-style: italic;
+    color: var(--textcolor-heading);
+}
+
+.testimonials span{
+    margin-left: 70px;
+}
+
+#expert-image {
+    height: 300px;
+}
+
+.expert-photo-div {
+    background-color: white;
+    padding: 1rem;
+    max-width: min-content;
+}
+
+button {
+    background-color: var(--bg-header);
+    color: var(--textcolor-heading);
+    font-size: var(--textsize-body);
+    padding: 1.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--textcolor-heading);
+    cursor: pointer;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+header a, button a {
+    text-decoration: none;
+    color: var(--textcolor-heading);
+}
+
+header a:hover, button a:hover {
+    text-decoration: underline;
+    color: var(--bg-body);
 }
