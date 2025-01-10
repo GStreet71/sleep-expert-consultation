@@ -23,7 +23,8 @@ body{
     background: var(--bg-body);
 }
 
-header {
+header, footer {
+    color: var(--textcolor-heading);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +36,36 @@ header {
     padding: 1rem;
 }
 
+.footer-links, .social-media {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-links > li {
+    flex: 1;
+    text-align: center;
+}
+
+.social-media {
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.social-media > li {
+    flex: 1;
+    text-align: center;
+}
+
 .title-container {
     background-color: var(--bg-header2);
     width: 100%;
@@ -42,17 +73,14 @@ header {
     padding: .5rem;
 }
 
-/* #subheader {    
-    border-bottom: 3px solid white;
-} */
-
 h1{
     font-size: var(--textsize-heading-lg);
     padding: 2rem;
-    color: var(--textcolor-heading);
+    color: var(--textcolor-body);
 }
 
 header h1 {
+    color: var(--textcolor-heading);
     font-size: var(--textsize-heading);
     text-align: center;
     padding: 0;
@@ -60,15 +88,21 @@ header h1 {
 
 h2 {
     padding: 2rem;
+    font-family: var(--font-header);
     font-size: var(--textsize-subheading);
+    color: var(--textcolor-heading);
 }
 
 header h2 {
     padding: 1rem .5rem 0 .5rem;
-    font-size: var(--textsize-subheading);
 }
 
-p, li{
+footer h2 {
+    padding: .5rem;
+}
+
+
+section p, li{
     font-family: var(--font-body);
     font-weight: 400;
     color: var(--textcolor-body);
@@ -76,7 +110,7 @@ p, li{
     padding: .5rem;
 }
 
-section, footer {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,23 +118,27 @@ section, footer {
     margin: auto;
     padding: 4rem;
     max-width: 900px;
-    height: auto;
+    height: 100vh;
+}
+
+#hero {
+    max-width: none;
 }
 
 #expert {
-    height: 80vh;
-    width: 100vw;
+    /* height: 80vh; */
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
-    margin: auto;
-    padding: 1rem;
     max-width: none;
 }
 
 #cta {
     height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .expert-details, .expert-photo {
@@ -110,30 +148,72 @@ section, footer {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-    align-items: space-between;
+    text-align: center;
 }
 
-.testimonials {
+.expert-details-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /*Add spacing between child elements */
+}
+
+.expert-details h1 {
+    display: inline-block;
+    position: relative;
+}
+
+.expert-title {
+    margin-bottom: 2rem; /* Add spacing below the title */
+}
+
+.expert-bio {
+    margin-bottom: 2rem; /* Add spacing below the bio */
+}
+
+.testimonial {
     padding: 2rem;
     font-style: italic;
-    color: var(--textcolor-heading);
+    color: black;
 }
 
-.testimonials span{
-    margin-left: 70px;
+.testimonial span{
+    margin-left: 40px;
 }
 
 #expert-image {
-    height: 300px;
+    width: auto;
+    height: 100%;
 }
 
 .expert-photo-div {
     background-color: white;
-    padding: 1rem;
-    max-width: min-content;
+    padding: 1rem; */
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button {
+.starburst {
+    height: 150px;
+    filter: invert(100%);  
+    -webkit-filter: invert(100%);
+    position: absolute;
+}
+
+#starburst {    
+    top: -30px;
+    right: -90px;
+}
+
+#starburst2 {
+    bottom: -50px;
+    left: -130px;
+}
+
+#cta-button {
     background-color: var(--bg-header);
     color: var(--textcolor-heading);
     font-size: var(--textsize-body);
@@ -142,14 +222,20 @@ button {
     border: 2px solid var(--textcolor-heading);
     cursor: pointer;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
 }
 
-header a, button a {
+header a, #cta-button a, footer a {
     text-decoration: none;
     color: var(--textcolor-heading);
 }
 
-header a:hover, button a:hover {
+header a:hover, #cta-button a:hover {
     text-decoration: underline;
     color: var(--bg-body);
+}
+
+#calendar-icon {
+    margin-right: 1rem;
+    vertical-align: text-bottom;
 }

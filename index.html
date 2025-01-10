@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleep Better with Expert Consultation</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month" />
 </head>
 <body>
     <header>
@@ -16,27 +17,34 @@
         <h2 id="subheader"><a href="schedule-link">Schedule Your Free Sleep Consultation Today</a></h2>
     </header>
     
-    <section id="expert">
-        <div class="expert-details">
-            <div class="expert-details-div">
-                <h1>I'm Caleb,<br> Your Sleep Consultant</h1>
-                <p>Hi, I'm a certified sleep consultant with years of experience helping thousands of individuals achieve better sleep. I specialize in <i>[mention any specialties such as insomnia, sleep disorders, sleep hygiene, etc.].</i></p>
-                <p class="testimonials">“[Insert a brief testimonial from a satisfied client.]"<span>-[Satisfied Client]</span></p>
+    <section id="hero">
+        <div id="expert">
+            <div class="expert-details">
+                <div class="expert-details-div">
+                    <div class="expert-title">                                  
+                        <h1><img src="assets/starburst.png" alt="Starburst Icon" class="starburst" id="starburst2">I'm Caleb,<br>Your Sleep Expert<img src="assets/starburst.png" alt="Starburst Icon" class="starburst" id="starburst"></h1>
+                        </h1>                        
+                    </div>
+                    <div class="expert-bio">
+                        <p>Hi, I'm a certified sleep consultant with years of experience helping thousands of individuals achieve better sleep. I specialize in <i>[mention any specialties such as insomnia, sleep disorders, sleep hygiene, etc.].</i></p>                        
+                    </div>
+                    <p class="testimonial">“[Insert a brief testimonial from a satisfied client.]"<span>-[Satisfied Client]</span></p>
+                </div>
             </div>
-        </div>
-        <div class="expert-photo">
-            <div class="expert-photo-div">
-                <img src="assets/expert_head01.jpg" alt="Caleb Harris, Sleep Consultant" id="expert-image">
+            <div class="expert-photo">
+                <div class="expert-photo-div">
+                    <img src="assets/expert_head01.jpg" alt="Caleb Harris, Sleep Consultant" id="expert-image">
+                </div>
             </div>
+        </div>        
+        <div id="cta">
+            <button id="cta-button"><a href="schedule-link"><span class="material-symbols-outlined" id="calendar-icon">
+                calendar_month</span>Book A Consultation</a></button>
         </div>
-    </section>
-    
-    <section id="cta">
-        <button><a href="schedule-link">Schedule Your Free Sleep Consultation</a></button>
     </section>
     
     <section id="benefits">
-        <h3>Why Choose Our Sleep Consultation Services?</h3>
+        <h2>Why Choose Our Sleep Consultation Services?</h2>
         <ul>
             <li>Personalized sleep assessments to identify issues.</li>
             <li>Proven techniques to improve sleep quality and duration.</li>
@@ -46,7 +54,7 @@
     </section>
         
     <section id="resources">
-        <h3>Helpful Resources</h3>
+        <h2>Helpful Resources</h2>
         <ul>
             <li><a href="blog-post-1">5 Tips for Better Sleep Hygiene</a></li>
             <li><a href="blog-post-2">Understanding Sleep Disorders</a></li>
@@ -55,12 +63,22 @@
     </section>
     
     <footer>
-        <p>Contact: [Contact Information] | Privacy Policy | Terms of Service</p>
-        <div class="social-media">
-            <a href="[Facebook Link]">Facebook</a>
-            <a href="[Instagram Link]">Instagram</a>
-            <a href="[Twitter Link]">Twitter</a>
-        </div>
+        <ul class="footer-links">
+            <li id="footer-contact">
+                <h2>Contact: [Contact Information]</h2>
+            </li>
+            <li id="footer-privacy">
+                <h2>Privacy Policy</h2>
+            </li>
+            <li id="footer-legal">
+                <h2>Terms of Service</h2>
+            </li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="[Facebook Link]">Facebook</a></li>
+            <li><a href="[Instagram Link]">Instagram</a></li>
+            <li><a href="[Twitter Link]">Twitter</a></li>
+        </ul>
     </footer>
 </body>
 </html>
