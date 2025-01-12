@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">            
+    <title>Sleep Better with Expert Consultation</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+        } */
+        header{ 
+            background: url(assets/bed2.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        header h2{
+            font-family: 'Noto Serif Display', serif;
+            font-size: 4rem;
+            font-weight: 100;
+            color: #fff;
+        }
+        @media screen and (max-width: 990px){
+            header{
+                min-height: 500px;
+            }
+        }
+        #header-title{            
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+            transform: translate(-50%, -50%);
+        }
+        #cta{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #fff;
+            /* border-radius: 50%; */
+        }
+        .starburst {
+            height: 150px;
+            /* filter: invert(100%);  
+            -webkit-filter: invert(100%);
+            position: absolute; */
+        }
+        /* #starburst {    
+            top: -30px;
+            right: -90px;
+        }
+        #starburst2 {
+            bottom: -50px;
+            left: -130px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo right">@caleb_the_sleep_expert<i class="right fa-brands fa-instagram fa-xl valign-wrapper"></i></a>
+                
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="hide-on-med-and-down">
+                    <li><a href="about-link">About</a></li>
+                    <li><a href="services-link"><strong>Schedule A Consultation</strong></a></li>
+                    <li><a href="contact-link">Contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li>
+                        <a href="#" class="right sidenav-close">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </li>
+                    <li><a href="about-link">About</a></li>
+                    <li><a href="services-link"><strong>Schedule A Consultation</strong></a></li>
+                    <li><a href="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="cta" class="center">
+            <a class="waves-effect waves-light btn-large light-blue darken-2"><i class="material-icons left">event</i>Book A Consultation</a>
+        </div>
+        <div id="header-title" class="container">
+            <h2 class="center">Unlock the Secret to a Restful Night's Sleep</h2>
+        </div>
+    </header>
+    
+    <section class="section" id="expert">
+        <div class="row container">
+            <div class="col s12 l6">
+                <h2 class="light-blue-text text-darken-4">
+                    <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="responsive-img starburst" id="starburst2"> -->
+                    I'm Caleb,<br>Your Sleep Expert
+                    <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="starburst" id="starburst"> -->
+                </h2>
+                <p><span class="flow-text">Hi, I'm a certified sleep consultant</span> with years of experience helping thousands of individuals achieve better sleep. I specialize in <i>[mention any specialties such as insomnia, sleep disorders, sleep hygiene, etc.].</i></p>
+                <p class="testimonial"><i>“[Insert a brief testimonial from a satisfied client.]"<span>-[Satisfied Client]</span></i></p>
+            </div>
+            <div class="col s12 l4 offset-l1">
+                <img src="assets/expert_head01.jpg" alt="Caleb Harris, Sleep Consultant" class=responsive-img id="expert-image">
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/bed.png" alt="" class="center responsive-img">
+        </div>
+    </div>
+    
+    <section id="benefits">
+        <h2>Why Choose Sleep Consultation Services?</h2>
+        <ul>
+            <li>Personalized sleep assessments to identify issues.</li>
+            <li>Proven techniques to improve sleep quality and duration.</li>
+            <li>Expert guidance on sleep hygiene and routines.</li>
+            <li>Support for various sleep disorders (insomnia, sleep apnea, etc.).</li>
+        </ul>
+    </section>
+        
+    <section id="resources">
+        <h2>Helpful Resources</h2>
+        <ul>
+            <li><a href="blog-post-1">5 Tips for Better Sleep Hygiene</a></li>
+            <li><a href="blog-post-2">Understanding Sleep Disorders</a></li>
+            <li><a href="blog-post-3">How to Create the Ideal Sleep Environment</a></li>
+        </ul>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/good_morning.png" alt="" class="center responsive-img">
+        </div>
+    </div>
+    
+    <footer>
+        <ul class="footer-links">
+            <li id="footer-contact">
+                <h2>Contact: [Contact Information]</h2>
+            </li>
+            <li id="footer-privacy">
+                <h2>Privacy Policy</h2>
+            </li>
+            <li id="footer-legal">
+                <h2>Terms of Service</h2>
+            </li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="[Facebook Link]">Facebook</a></li>
+            <li><a href="[Instagram Link]">Instagram</a></li>
+            <li><a href="[Twitter Link]">Twitter</a></li>
+        </ul>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+    });
+</script>
+</body>
+</html>
