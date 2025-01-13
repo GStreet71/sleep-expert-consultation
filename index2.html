@@ -38,7 +38,7 @@
                 min-height: 500px;
             }
         }
-        #header-title{            
+        #header-tagline{            
             position: absolute;
             left: 50%;
             bottom: 5%;
@@ -52,9 +52,15 @@
             border: 2px solid #fff;
             /* border-radius: 50%; */
         }
-        .starburst {
+        #footer-tagline{            
+            font-family: 'Noto Serif Display', serif;
+            font-weight: 100;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+        /*.starburst {
             height: 150px;
-            /* filter: invert(100%);  
+             filter: invert(100%);  
             -webkit-filter: invert(100%);
             position: absolute; */
         }
@@ -95,78 +101,116 @@
             </div>
         </nav>
         <div id="cta" class="center">
-            <a class="waves-effect waves-light btn-large light-blue darken-2"><i class="material-icons left">event</i>Book A Consultation</a>
+            <a class="waves-effect waves-light btn-large light-blue darken-2"><i class="material-icons left">event</i>Schedule A Consultation</a>
         </div>
-        <div id="header-title" class="container">
+        <div id="header-tagline" class="container">
             <h2 class="center">Unlock the Secret to a Restful Night's Sleep</h2>
         </div>
     </header>
-    
-    <section class="section" id="expert">
-        <div class="row container">
-            <div class="col s12 l6">
-                <h2 class="light-blue-text text-darken-4">
-                    <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="responsive-img starburst" id="starburst2"> -->
-                    I'm Caleb,<br>Your Sleep Expert
-                    <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="starburst" id="starburst"> -->
-                </h2>
-                <p><span class="flow-text">Hi, I'm a certified sleep consultant</span> with years of experience helping thousands of individuals achieve better sleep. I specialize in <i>[mention any specialties such as insomnia, sleep disorders, sleep hygiene, etc.].</i></p>
-                <p class="testimonial"><i>“[Insert a brief testimonial from a satisfied client.]"<span>-[Satisfied Client]</span></i></p>
+
+    <main>    
+        <section class="section brown lighten-5" id="expert">
+            <div class="row container">
+                <div class="col s12 l6">
+                    <h2 class="light-blue-text text-darken-4 right-align">
+                        <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="responsive-img starburst" id="starburst2"> -->
+                        I'm Caleb,<br>Your Sleep Expert
+                        <!-- <img src="assets/starburst.png" alt="Starburst Icon" class="starburst" id="starburst"> -->
+                    </h2>
+                    <p><span class="flow-text">Hi, I'm a certified sleep consultant</span> with years of experience helping thousands of individuals achieve better sleep. I specialize in <i>[mention any specialties such as insomnia, sleep disorders, sleep hygiene, etc.].</i></p>
+                    <p class="testimonial"><i>“[Insert a brief testimonial from a satisfied client.]"<span>-[Satisfied Client]</span></i></p>
+                </div>
+                <div class="col s12 l4 offset-l1">
+                    <img src="assets/expert_head01.jpg" alt="Caleb Harris, Sleep Consultant" class=responsive-img id="expert-image">
+                </div>
             </div>
-            <div class="col s12 l4 offset-l1">
-                <img src="assets/expert_head01.jpg" alt="Caleb Harris, Sleep Consultant" class=responsive-img id="expert-image">
+        </section>
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="assets/bed.png" alt="" class="center responsive-img">
             </div>
         </div>
-    </section>
+            
+        <section class="section brown lighten-5" id="benefits">
+            <div class="row container">
+                <div class="col s12 l6 push-l5">
+                    <h2 class="light-blue-text text-darken-4">Why Choose My Services?</h2>
+                    <ul>
+                        <li>Personalized sleep assessments to identify issues.</li>
+                        <li>Proven techniques to improve sleep quality and duration.</li>
+                        <li>Expert guidance on sleep hygiene and routines.</li>
+                        <li>Support for various sleep disorders (insomnia, sleep apnea, etc.).</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 pull-l5">
+                    <img src="assets/sleep01.png" alt="sleeping woman" class=responsive-img id="">
+                </div>
+            </div>
+        </section>
 
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="assets/bed.png" alt="" class="center responsive-img">
-        </div>
-    </div>
-    
-    <section id="benefits">
-        <h2>Why Choose Sleep Consultation Services?</h2>
-        <ul>
-            <li>Personalized sleep assessments to identify issues.</li>
-            <li>Proven techniques to improve sleep quality and duration.</li>
-            <li>Expert guidance on sleep hygiene and routines.</li>
-            <li>Support for various sleep disorders (insomnia, sleep apnea, etc.).</li>
-        </ul>
-    </section>
-        
-    <section id="resources">
-        <h2>Helpful Resources</h2>
-        <ul>
-            <li><a href="blog-post-1">5 Tips for Better Sleep Hygiene</a></li>
-            <li><a href="blog-post-2">Understanding Sleep Disorders</a></li>
-            <li><a href="blog-post-3">How to Create the Ideal Sleep Environment</a></li>
-        </ul>
-    </section>
+        <section class="section brown lighten-5" id="resources">
+            <div class="row container">
+                <div class="col s12 l6 right-align">
+                    <h2 class="light-blue-text text-darken-4">Helpful Resources</h2>
+                    <ul>
+                        <li><a href="blog-post-1">5 Tips for Better Sleep Hygiene</a></li>
+                        <li><a href="blog-post-2">Understanding Sleep Disorders</a></li>
+                        <li><a href="blog-post-3">How to Create the Ideal Sleep Environment</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 offset-l1">
+                    <img src="assets/sleep02.png" alt="Caleb Harris, Sleep Consultant" class=responsive-img id="expert-image">
+                </div>
+            </div>
+        </section>
 
-    <div class="parallax-container">
+        <!-- <div class="parallax-container">
         <div class="parallax">
             <img src="assets/good_morning.png" alt="" class="center responsive-img">
-        </div>
-    </div>
+        </div> -->
+    </main>
     
-    <footer>
-        <ul class="footer-links">
-            <li id="footer-contact">
-                <h2>Contact: [Contact Information]</h2>
-            </li>
-            <li id="footer-privacy">
-                <h2>Privacy Policy</h2>
-            </li>
-            <li id="footer-legal">
-                <h2>Terms of Service</h2>
-            </li>
-        </ul>
-        <ul class="social-media">
-            <li><a href="[Facebook Link]">Facebook</a></li>
-            <li><a href="[Instagram Link]">Instagram</a></li>
-            <li><a href="[Twitter Link]">Twitter</a></li>
-        </ul>
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l5 s12">
+                    <div class="container">
+                        <h5 class="white-text">
+                            <a href="#" class="white-text">@caleb_the_sleep_expert<i class="right fa-brands fa-instagram fa-xl valign-wrapper"></i></a>
+                        </h5>
+                    <p class="white-text" id="footer-tagline">Unlock the secret to a restful nights sleep.</p>
+                    </div>
+                </div>
+                <div class="col l2 offset-l1 s12">
+                    <h5 class="white-text">Address</h5>
+                    <p class="grey-text text-lighten-3">Mattress Firm<br>Ward Parkway Center<br>8821 State Line Rd<br>Kansas City, MO 64114</p>
+                </div>
+                <div class="col l2 s12">
+                    <h5 class="white-text">Socials</h5>
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 s12">
+                    <h5 class="white-text">Pages</h5>
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Book a Consultation</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2025 Copyright
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
     </footer>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
